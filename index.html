@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Gallery | CodeAlpha</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Image Gallery</h1>
+    <p>Click any photo to open it. Use the arrow keys to move between photos.</p>
+    <nav class="filters" id="filters" aria-label="Filter by category"></nav>
+  </header>
+
+  <main class="gallery" id="gallery"></main>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lb-btn close" id="close" aria-label="Close">&times;</button>
+    <button class="lb-btn prev" id="prev" aria-label="Previous image">&#10094;</button>
+    <figure>
+      <img id="lb-img" src="" alt="">
+      <figcaption id="lb-caption"></figcaption>
+    </figure>
+    <button class="lb-btn next" id="next" aria-label="Next image">&#10095;</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
